@@ -23,8 +23,6 @@ def retrieve_phone_code(driver) -> str:
         return code
 
 def is_url_reachable(url):
-    """Check if the URL can be reached. Pass the URL for Urban Routes as a parameter.
-    If it can be reached, it returns True, otherwise it returns False"""
 
     import ssl
     import urllib.request
