@@ -5,6 +5,11 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from helpers import retrieve_phone_code
 
+
+class UrbanRoutesLocators:
+    pass
+
+
 class UrbanRoutesPage:
     FROM_INPUT = (By.ID, "from")
     TO_INPUT = (By.ID, "to")
