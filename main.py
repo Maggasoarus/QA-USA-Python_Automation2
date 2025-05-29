@@ -2,12 +2,11 @@ from selenium import webdriver
 import data
 import helpers
 from helpers import is_url_reachable
-from pages import UrbanRoutesPage  # assuming you have this class in this file
+from pages import UrbanRoutesPage
 
 class TestUrbanRoutes:
     @classmethod
     def setup_class(cls):
-        # do not modify - we need additional logging enabled in order to retrieve phone confirmation code
         from selenium.webdriver import DesiredCapabilities
         capabilities = DesiredCapabilities.CHROME
         capabilities["goog:loggingPrefs"] = {'performance': 'ALL'}
